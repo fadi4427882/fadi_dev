@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1DGWNQTFDH"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-1DGWNQTFDH');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fadi - Web Developer & CS Student Portfolio">
+    <title>Fadi | Web Developer</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="dark-mode">
+
+    <!-- Scroll Progress -->
+    <div id="scroll-progress"></div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container nav-container">
+            <a href="#hero" class="logo animate-logo">Fadi<span>.Dev</span></a>
+
+            <nav class="nav">
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#about" class="nav-link" data-i18n="nav_about">About</a></li>
+                    <li><a href="#skills" class="nav-link" data-i18n="nav_skills">Skills</a></li>
+                    <li><a href="#projects" class="nav-link" data-i18n="nav_projects">Projects</a></li>
+                    <li><a href="#experience" class="nav-link" data-i18n="nav_background">Background</a></li>
+                    <li><a href="#services" class="nav-link" data-i18n="nav_services">Services</a></li>
+                    <li><a href="#contact" class="nav-link" data-i18n="nav_contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-controls">
+                <button id="lang-toggle" class="icon-btn lang-btn" aria-label="Toggle Language">FR</button>
+                <button id="theme-toggle" class="icon-btn" aria-label="Toggle Theme">
+                    <i class='bx bx-sun' id="theme-icon"></i>
+                </button>
+                <button class="menu-toggle icon-btn" id="mobile-menu" aria-label="Toggle Menu">
+                    <i class='bx bx-menu' id="menu-icon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero section">
+            <div id="particles-js"></div>
+            <div class="container hero-container">
+                <div class="hero-content fade-in">
+                    <span class="greeting" data-i18n="greeting">Hi, I'm</span>
+                    <h1 class="hero-title animate-name">Fadi</h1>
+                    <h2 class="hero-subtitle">
+                        <span class="typed-text"></span>
+                    </h2>
+                    <p class="hero-intro" data-i18n="hero_intro">
+                        I am an L1 Computer Science student at USTO University in Oran. I specialize in front-end
+                        development using HTML and CSS, bringing hands-on e-commerce experience to craft practical,
+                        real-world digital solutions.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn-primary" data-i18n="btn_view_proj">View Projects</a>
+                        <a href="#" class="btn btn-outline" data-i18n="btn_cv" download="Fadi_CV.pdf">Download CV</a>
+                        <a href="#contact" class="btn btn-outline" data-i18n="btn_contact">Contact Me</a>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator fade-in">
+                <a href="#about" aria-label="Scroll Down">
+                    <i class='bx bx-chevron-down'></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- Tech Stack Marquee -->
+        <div class="tech-marquee-wrapper">
+            <div class="tech-marquee">
+                <div class="tech-marquee-content">
+                    <i class='bx bxl-html5'></i> <span>HTML5</span>
+                    <i class='bx bxl-css3'></i> <span>CSS3</span>
+                    <i class='bx bxl-javascript'></i> <span>JavaScript</span>
+                    <i class='bx bxl-python'></i> <span>Python</span>
+                    <i class='bx bxl-c-plus-plus'></i> <span>C/C++</span>
+                    <i class='bx bxl-git'></i> <span>Git</span>
+                    <i class='bx bxl-github'></i> <span>GitHub</span>
+                    <i class='bx bxl-visual-studio'></i> <span>VS Code</span>
+                    <i class='bx bx-data'></i> <span>Algorithms</span>
+                    <!-- Duplicate -->
+                    <i class='bx bxl-html5'></i> <span>HTML5</span>
+                    <i class='bx bxl-css3'></i> <span>CSS3</span>
+                    <i class='bx bxl-javascript'></i> <span>JavaScript</span>
+                    <i class='bx bxl-python'></i> <span>Python</span>
+                    <i class='bx bxl-c-plus-plus'></i> <span>C/C++</span>
+                    <i class='bx bxl-git'></i> <span>Git</span>
+                    <i class='bx bxl-github'></i> <span>GitHub</span>
+                    <i class='bx bxl-visual-studio'></i> <span>VS Code</span>
+                    <i class='bx bx-data'></i> <span>Algorithms</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- About Section -->
+        <section id="about" class="about section">
+            <div class="container">
+                <h2 class="section-title fade-in" data-i18n="sec_about">About Me</h2>
+                <div class="about-content fade-in">
+                    <div class="about-image-wrapper">
+                        <img src="images/logo.png" alt="Fadi Programmer Logo" class="about-image">
+                    </div>
+                    <div class="about-text">
+                        <p data-i18n="about_p1">
+                            I’m a 20-year-old passionate web developer and a first-year (L1) Computer Science student at
+                            USTO University in Oran. I specialize in front-end development using HTML and CSS, alongside
+                            a solid academic foundation in the C programming language.
+                        </p>
+                        <p data-i18n="about_p2">
+                            Beyond coding, I have accumulated practical, hands-on experience in e-commerce, teaching me
+                            exactly how to build, manage, and scale online projects. This entrepreneurial perspective
+                            significantly helps me understand real-world business needs. Therefore, I am constantly
+                            learning and challenging myself—currently expanding my skills in JavaScript and Python—with
+                            the ultimate goal of becoming a highly versatile and impactful professional developer.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section">
+            <div class="container">
+                <h2 class="section-title fade-in" data-i18n="sec_skills">Core Competencies</h2>
+
+                <!-- Skills Tab Filters -->
+                <div class="skills-tabs fade-in">
+                    <button class="skill-tab active" data-tab="all" data-i18n="tab_all">All Skills</button>
+                    <button class="skill-tab" data-tab="frontend" data-i18n="tab_frontend">Front-End</button>
+                    <button class="skill-tab" data-tab="programming" data-i18n="tab_prog">Programming</button>
+                    <button class="skill-tab" data-tab="tools" data-i18n="tab_tools">Tools</button>
+                </div>
+
+                <div class="skills-showcase fade-in">
+                    <!-- Front-End Skills -->
+                    <div class="skill-card" data-category="frontend">
+                        <div class="skill-card-icon" style="--icon-color: #e34c26;">
+                            <i class='bx bxl-html5'></i>
+                        </div>
+                        <div class="skill-card-body">
+                            <div class="skill-card-header">
+                                <span class="skill-name">HTML5</span>
+                                <span class="skill-percent">92%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" data-width="92" style="--bar-color: #e34c26;"></div>
+                            </div>
+                            <span class="skill-level" data-i18n="level_advanced">Advanced</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card" data-category="frontend">
+                        <div class="skill-card-icon" style="--icon-color: #264de4;">
+                            <i class='bx bxl-css3'></i>
+                        </div>
+                        <div class="skill-card-body">
+                            <div class="skill-card-header">
+                                <span class="skill-name">CSS3</span>
+                                <span class="skill-percent">88%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" data-width="88" style="--bar-color: #264de4;"></div>
+                            </div>
+                            <span class="skill-level" data-i18n="level_advanced">Advanced</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card" data-category="frontend">
+                        <div class="skill-card-icon" style="--icon-color: #f0db4f;">
+                            <i class='bx bxl-javascript'></i>
+                        </div>
+                        <div class="skill-card-body">
+                            <div class="skill-card-header">
+                                <span class="skill-name">JavaScript</span>
+                                <span class="skill-percent">65%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" data-width="65" style="--bar-color: #f0db4f;"></div>
+                            </div>
+                            <span class="skill-level" data-i18n="level_intermediate">Intermediate</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card" data-category="frontend">
+                        <div class="skill-card-icon" style="--icon-color: #3b82f6;">
+                            <i class='bx bx-layout'></i>
+                        </div>
+                        <div class="skill-card-body">
+                            <div class="skill-card-header">
+                                <span class="skill-name">Responsive Design</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" data-width="85" style="--bar-color: #3b82f6;"></div>
+                            </div>
+                            <span class="skill-level" data-i18n="level_advanced">Advanced</span>
+                        </div>
+                    </div>
+
+                    <!-- Programming Skills -->
+                    <div class="skill-card" data-category="programming">
+                        <div class="skill-card-icon" style="--icon-color: #a8b9cc;">
+                            <i class='bx bxl-c-plus-plus'></i>
+                        </div>
+                        <div class="skill-card-body">
+                            <div class="skill-card-header">
+                                <span class="skill-name">C Language</span>
+                                <span class="skill-percent">78%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" data-width="78" style="--bar-color: #a8b9cc;"></div>
+                            </div>
+                            <span class="skill-level" data-i18n="level_intermediate">Intermediate</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card" data-category="programming">
+                        <div class="skill-card-icon" style="--icon-color: #3776ab;">
+                            <i class='bx bxl-python'></i>
+                        </div>
+                        <div class="skill-card-body">
+                            <div class="skill-card-header">
+                                <span class="skill-name">Python</span>
+                                <span class="skill-percent">35%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" data-width="35" style="--bar-color: #3776ab;"></div>
+                            </div>
+                            <span class="skill-level" data-i18n="level_learning">Learning</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card" data-category="programming">
+                        <div class="skill-card-icon" style="--icon-color: #8b5cf6;">
+                            <i class='bx bx-line-chart'></i>
+                        </div>
+                        <div class="skill-card-body">
+                            <div class="skill-card-header">
+                                <span class="skill-name">Algorithms</span>
+                                <span class="skill-percent">72%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" data-width="72" style="--bar-color: #8b5cf6;"></div>
+                            </div>
+                            <span class="skill-level" data-i18n="level_intermediate">Intermediate</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card" data-category="programming">
+                        <div class="skill-card-icon" style="--icon-color: #ec4899;">
+                            <i class='bx bx-math'></i>
+                        </div>
+                        <div class="skill-card-body">
+                            <div class="skill-card-header">
+                                <span class="skill-name">Data Structures</span>
+                                <span class="skill-percent">68%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" data-width="68" style="--bar-color: #ec4899;"></div>
+                            </div>
+                            <span class="skill-level" data-i18n="level_intermediate">Intermediate</span>
+                        </div>
+                    </div>
+
+                    <!-- Tools Skills -->
+                    <div class="skill-card" data-category="tools">
+                        <div class="skill-card-icon" style="--icon-color: #f05033;">
+                            <i class='bx bxl-git'></i>
+                        </div>
+                        <div class="skill-card-body">
+                            <div class="skill-card-header">
+                                <span class="skill-name">Git & GitHub</span>
+                                <span class="skill-percent">75%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" data-width="75" style="--bar-color: #f05033;"></div>
+                            </div>
+                            <span class="skill-level" data-i18n="level_intermediate">Intermediate</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card" data-category="tools">
+                        <div class="skill-card-icon" style="--icon-color: #007acc;">
+                            <i class='bx bx-code-block'></i>
+                        </div>
+                        <div class="skill-card-body">
+                            <div class="skill-card-header">
+                                <span class="skill-name">VS Code</span>
+                                <span class="skill-percent">90%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" data-width="90" style="--bar-color: #007acc;"></div>
+                            </div>
+                            <span class="skill-level" data-i18n="level_advanced">Advanced</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card" data-category="tools">
+                        <div class="skill-card-icon" style="--icon-color: #0078d4;">
+                            <i class='bx bxl-windows'></i>
+                        </div>
+                        <div class="skill-card-body">
+                            <div class="skill-card-header">
+                                <span class="skill-name">Windows</span>
+                                <span class="skill-percent">95%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" data-width="95" style="--bar-color: #0078d4;"></div>
+                            </div>
+                            <span class="skill-level" data-i18n="level_expert">Expert</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card" data-category="tools">
+                        <div class="skill-card-icon" style="--icon-color: #fcc624;">
+                            <i class='bx bxl-tux'></i>
+                        </div>
+                        <div class="skill-card-body">
+                            <div class="skill-card-header">
+                                <span class="skill-name">Linux Systems</span>
+                                <span class="skill-percent">55%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" data-width="55" style="--bar-color: #fcc624;"></div>
+                            </div>
+                            <span class="skill-level" data-i18n="level_intermediate">Intermediate</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Soft Skills / Bonus Row -->
+                <div class="soft-skills-row fade-in">
+                    <div class="soft-skill-badge"><i class='bx bxs-shopping-bag'></i> <span data-i18n="soft_ecom">E-Commerce</span></div>
+                    <div class="soft-skill-badge"><i class='bx bx-trending-up'></i> <span data-i18n="soft_growth">Growth Mindset</span></div>
+                    <div class="soft-skill-badge"><i class='bx bx-target-lock'></i> <span data-i18n="soft_focus">User Focus</span></div>
+                    <div class="soft-skill-badge"><i class='bx bx-bulb'></i> <span data-i18n="soft_prob">Problem Solving</span></div>
+                    <div class="soft-skill-badge"><i class='bx bx-group'></i> <span data-i18n="soft_collab">Collaboration</span></div>
+                    <div class="soft-skill-badge"><i class='bx bx-time'></i> <span data-i18n="soft_time">Time Management</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects section">
+            <div class="container">
+                <h2 class="section-title fade-in" data-i18n="sec_proj">Featured Projects</h2>
+                <p class="projects-subtitle fade-in" data-i18n="proj_sub">A selection of things I've built and shipped.</p>
+
+                <div class="projects-grid">
+
+                    <!-- Project 1 -->
+                    <div class="proj-card fade-in">
+                        <div class="proj-image-wrap">
+                            <div class="proj-image proj-image--ecom">
+                                <div class="proj-image-icons">
+                                    <i class='bx bxl-javascript' style="color:#f0db4f;"></i>
+                                    <i class='bx bxl-css3' style="color:#264de4;"></i>
+                                    <i class='bx bx-check-square' style="color:#3b82f6;"></i>
+                                </div>
+                            </div>
+                            <div class="proj-image-overlay">
+                                <a href="#" class="proj-overlay-btn" aria-label="Live Demo"><i class='bx bx-play-circle'></i></a>
+                                <a href="#" class="proj-overlay-btn" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+                            </div>
+                        </div>
+                        <div class="proj-body">
+                            <div class="proj-meta">
+                                <span class="proj-tag" data-i18n="tag_app">App</span>
+                                <span class="proj-number">01</span>
+                            </div>
+                            <h3 class="proj-title" data-i18n="p1_title">Smart Task Manager</h3>
+                            <p class="proj-desc" data-i18n="p1_desc">A sleek, responsive task management application allowing users to intuitively organize daily activities with interactive drag-and-drop features.</p>
+                            <ul class="proj-tech-tags">
+                                <li><i class='bx bxl-javascript' style="color:#f0db4f;"></i> JavaScript</li>
+                                <li><i class='bx bxl-css3' style="color:#264de4;"></i> CSS3</li>
+                                <li><i class='bx bx-layout' style="color:#3b82f6;"></i> DOM M.</li>
+                            </ul>
+                            <div class="proj-actions">
+                                <a href="#" class="proj-btn proj-btn--demo" id="proj1-demo" aria-label="Live Demo Project 1">
+                                    <i class='bx bx-rocket'></i>
+                                    <span data-i18n="btn_demo">Live Demo</span>
+                                </a>
+                                <a href="#" class="proj-btn proj-btn--code" id="proj1-code" aria-label="Source Code Project 1">
+                                    <i class='bx bxl-github'></i>
+                                    <span data-i18n="btn_code">Source Code</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="proj-card fade-in">
+                        <div class="proj-image-wrap">
+                            <div class="proj-image proj-image--algo">
+                                <div class="proj-image-icons">
+                                    <i class='bx bxl-python' style="color:#3776ab;"></i>
+                                    <i class='bx bx-bot' style="color:#ec4899;"></i>
+                                    <i class='bx bx-data' style="color:#8b5cf6;"></i>
+                                </div>
+                            </div>
+                            <div class="proj-image-overlay">
+                                <a href="#" class="proj-overlay-btn" aria-label="Live Demo"><i class='bx bx-play-circle'></i></a>
+                                <a href="#" class="proj-overlay-btn" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+                            </div>
+                        </div>
+                        <div class="proj-body">
+                            <div class="proj-meta">
+                                <span class="proj-tag" data-i18n="tag_auto">Automation</span>
+                                <span class="proj-number">02</span>
+                            </div>
+                            <h3 class="proj-title" data-i18n="p2_title">Log Data Analyzer</h3>
+                            <p class="proj-desc" data-i18n="p2_desc">An automated Python script designed to parse and analyze complex server logs, generating concise reports and visualizations to identify operational anomalies.</p>
+                            <ul class="proj-tech-tags">
+                                <li><i class='bx bxl-python' style="color:#3776ab;"></i> Python</li>
+                                <li><i class='bx bx-bot' style="color:#ec4899;"></i> Automation</li>
+                                <li><i class='bx bx-line-chart' style="color:#8b5cf6;"></i> Data Analysis</li>
+                            </ul>
+                            <div class="proj-actions">
+                                <a href="#" class="proj-btn proj-btn--demo" id="proj2-demo" aria-label="Live Demo Project 2">
+                                    <i class='bx bx-rocket'></i>
+                                    <span data-i18n="btn_demo">Live Demo</span>
+                                </a>
+                                <a href="#" class="proj-btn proj-btn--code" id="proj2-code" aria-label="Source Code Project 2">
+                                    <i class='bx bxl-github'></i>
+                                    <span data-i18n="btn_code">Source Code</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="proj-card fade-in">
+                        <div class="proj-image-wrap">
+                            <div class="proj-image proj-image--portfolio">
+                                <div class="proj-image-icons">
+                                    <i class='bx bxl-c-plus-plus' style="color:#a8b9cc;"></i>
+                                    <i class='bx bx-lock-alt' style="color:#e34c26;"></i>
+                                    <i class='bx bx-shield-quarter' style="color:#264de4;"></i>
+                                </div>
+                            </div>
+                            <div class="proj-image-overlay">
+                                <a href="#" class="proj-overlay-btn" aria-label="Live Demo"><i class='bx bx-play-circle'></i></a>
+                                <a href="#" class="proj-overlay-btn" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+                            </div>
+                        </div>
+                        <div class="proj-body">
+                            <div class="proj-meta">
+                                <span class="proj-tag" data-i18n="tag_security">Security</span>
+                                <span class="proj-number">03</span>
+                            </div>
+                            <h3 class="proj-title" data-i18n="p3_title">Secure Text Encryptor</h3>
+                            <p class="proj-desc" data-i18n="p3_desc">A highly optimized data encryption tool built in C, implementing standard cryptographic principles to securely encode and decode sensitive text files.</p>
+                            <ul class="proj-tech-tags">
+                                <li><i class='bx bxl-c-plus-plus' style="color:#a8b9cc;"></i> C Language</li>
+                                <li><i class='bx bx-math' style="color:#8b5cf6;"></i> Algorithms</li>
+                                <li><i class='bx bx-lock-alt' style="color:#e34c26;"></i> Cryptography</li>
+                            </ul>
+                            <div class="proj-actions">
+                                <a href="#" class="proj-btn proj-btn--demo" id="proj3-demo" aria-label="Live Demo Project 3">
+                                    <i class='bx bx-rocket'></i>
+                                    <span data-i18n="btn_demo">Live Demo</span>
+                                </a>
+                                <a href="#" class="proj-btn proj-btn--code" id="proj3-code" aria-label="Source Code Project 3">
+                                    <i class='bx bxl-github'></i>
+                                    <span data-i18n="btn_code">Source Code</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Experience & Education Section -->
+        <section id="experience" class="experience section">
+            <div class="container">
+                <h2 class="section-title fade-in" data-i18n="sec_bg">Background & Education</h2>
+                <div class="timeline">
+                    <!-- Exp 1 -->
+                    <div class="timeline-item fade-in">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date" data-i18n="bg_present">Present</span>
+                            <h3 class="timeline-role" data-i18n="bg_role">Computer Science Student (L1)</h3>
+                            <h4 class="timeline-company" data-i18n="bg_uni">USTO University, Oran</h4>
+                            <ul class="timeline-bullets">
+                                <li>Enduring rigorous foundational university curriculum encompassing computer science
+                                    theory and algorithmic problem solving.</li>
+                                <li>Developing extremely solid low-level memory programming concepts natively utilizing
+                                    the C language.</li>
+                                <li>Proactively studying JavaScript and Python entirely independently to aggressively
+                                    expand my technical versatility.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services section">
+            <div class="container">
+                <h2 class="section-title fade-in" data-i18n="sec_srv">Services Offering</h2>
+                <div class="services-grid">
+                    <div class="service-card fade-in">
+                        <i class='bx bx-layout service-icon'></i>
+                        <h3 class="service-title" data-i18n="srv1_title">Front-End Development</h3>
+                        <p class="service-desc" data-i18n="srv1_desc">I iteratively build incredibly clean, flawlessly responsive websites
+                            utilizing highly structured modern HTML and CSS.</p>
+                    </div>
+                    <div class="service-card fade-in">
+                        <i class='bx bx-cart service-icon'></i>
+                        <h3 class="service-title" data-i18n="srv2_title">E-Commerce Solutions</h3>
+                        <p class="service-desc" data-i18n="srv2_desc">I leverage substantial real-world enterprise experience to craft digital
+                            storefronts explicitly optimizing targeted user conversion.</p>
+                    </div>
+                    <div class="service-card fade-in">
+                        <i class='bx bx-code-block service-icon'></i>
+                        <h3 class="service-title" data-i18n="srv3_title">Software Logic Design</h3>
+                        <p class="service-desc" data-i18n="srv3_desc">I apply meticulous algorithmic problem-solving capabilities solidly
+                            rooted in rigorous C-language programming paradigms.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Career Objective -->
+        <section id="objective" class="objective section">
+            <div class="container">
+                <div class="objective-box fade-in">
+                    <i class='bx bxs-quote-alt-left quote-icon'></i>
+                    <p class="objective-text" data-i18n="quote">
+                        I am a young developer who genuinely believes in constantly learning, actively building, and
+                        relentlessly challenging myself to mature within the software development ecosystem. My
+                        definitive professional goal requires growing into a highly versatile and profoundly impactful
+                        professional multi-stack developer.
+                    </p>
+                    <i class='bx bxs-quote-alt-right quote-icon right'></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section">
+            <div class="container">
+                <h2 class="section-title fade-in" data-i18n="sec_contact">Get In Touch</h2>
+                <div class="contact-wrapper fade-in">
+                    <div class="contact-info">
+                        <h3 class="contact-subtitle" data-i18n="contact_sub">Let's build something practical!</h3>
+                        <p class="contact-desc"><span data-i18n="contact_desc1">Don't like using web forms? Send me an email directly at</span> <a
+                                href="mailto:fadidjabout2006@gmail.com"
+                                style="color: var(--accent-color);">fadidjabout2006@gmail.com</a>
+                            <span data-i18n="contact_desc2">or reach out instantly via my professional social media channels.</span></p>
+                        <div class="social-links">
+                            <a href="https://www.instagram.com/fadi______dja?igsh=MW02dnVtMGJiMzBsMQ==" target="_blank"
+                                aria-label="Instagram" class="social-icon"><i class='bx bxl-instagram'></i></a>
+                            <a href="#" aria-label="GitHub" class="social-icon"><i class='bx bxl-github'></i></a>
+                            <a href="https://www.facebook.com/fa.di.927591" target="_blank" aria-label="Facebook"
+                                class="social-icon"><i class='bx bxl-facebook'></i></a>
+                        </div>
+                    </div>
+                    <form id="contactForm" class="contact-form" action="https://formsubmit.co/fadidjabout2006@gmail.com" method="POST">
+                        <input type="hidden" id="device_info" name="device_info" value="">
+                        <!-- Formsubmit.co settings -->
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_subject" value="New message from Portfolio Visitors!">
+
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required placeholder="Your Name" class="form-control" data-i18n-placeholder="inp_name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required placeholder="Email Address" class="form-control" data-i18n-placeholder="inp_email">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="Topic" required placeholder="Subject" class="form-control" data-i18n-placeholder="inp_sub">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" required placeholder="Message"
+                                class="form-control" data-i18n-placeholder="inp_msg"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary submit-btn"><span data-i18n="btn_send">Send Message </span><i
+                                class='bx bx-send'></i></button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <p class="copyright">&copy; 2026 Fadi. All rights reserved.</p>
+            <a href="#hero" class="back-to-top" aria-label="Back to Top">
+                <i class='bx bx-up-arrow-alt'></i>
+            </a>
+        </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="js/translations.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
